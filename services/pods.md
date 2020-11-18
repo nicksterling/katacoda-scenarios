@@ -48,16 +48,11 @@ EOF
 Now let's apply it to our cluster
 `kubectl apply -f /root/k8s-katacoda-workshop/pod.yml`{{execute}}
 
-By itself, you cannot gain external access to a pod. You need to expose a pod as a *service*
-
-We will dive much deeper into services in another scneario, but for now let's expose our pod so we can view it. 
-
 `kubectl expose pod hello-k8s --type=NodePort --port 8080`{{execute}}
-
-Now that it's accessible, let's grab the port it generated and view it. (This will generate a link in the terminal. Click that link to view the Web UI of the pod.)
 
 ```
 export PORT=$(kubectl get svc hello-k8s -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
 echo "https://[[HOST_SUBDOMAIN]]-${PORT}-[[KATACODA_HOST]].environments.katacoda.com/"
 ```{{execute}}
 
+We have a pod again! Now up to this point we don't have an easy way to view this in a web browser. We need to expose that as a **service**. Let's go over that next. 
