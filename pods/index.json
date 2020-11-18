@@ -24,7 +24,7 @@
         }
     },
     "environment": {
-        "uieditorpath": "/root/example",
+        "uieditorpath": "/root/k8s-katacoda-workshop",
         "showide": true,
         "idePort": 23000,
         "uilayout": "terminal",
