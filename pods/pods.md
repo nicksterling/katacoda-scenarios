@@ -45,6 +45,6 @@ status: {}
 EOF
 ```{{execute}}
 
-`/tmp/storageos-secret.yaml`{{open}}
+`foreground.sh`{{open}}
 
 We have a pod again! Now up to this point we don't have an easy way to view this in a web browser. We need to expose that as a **service**. Let's go over that next. 
