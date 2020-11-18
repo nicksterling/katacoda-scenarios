@@ -48,4 +48,11 @@ EOF
 Now let's apply it to our cluster
 `kubectl apply -f /root/k8s-katacoda-workshop/pod.yml`{{execute}}
 
+`kubectl expose pod hello-k8s --type=NodePort --port 8080`{{execute}}
+
+```
+export PORT=$(kubectl get svc hello-k8s -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
+echo "https://[[HOST_SUBDOMAIN]]-${PORT}-[[KATACODA_HOST]].environments.katacoda.com/"
+```
+
 We have a pod again! Now up to this point we don't have an easy way to view this in a web browser. We need to expose that as a **service**. Let's go over that next. 
