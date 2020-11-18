@@ -25,7 +25,7 @@ Let's remove the pod we've imperatively created.
 Now let's create a manifest file called **pod.yml** and put this as the contents
 
 ```
-cat << EOF > /tmp/storageos-secret.yaml
+cat << EOF > /root/k8s-katacoda-workshop/pod.yml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -45,6 +45,7 @@ status: {}
 EOF
 ```{{execute}}
 
-`pod.yml`{{open}}
+Now let's apply it to our cluster
+`kubectl apply -f /root/k8s-katacoda-workshop/pod.yml`{{execute}}
 
 We have a pod again! Now up to this point we don't have an easy way to view this in a web browser. We need to expose that as a **service**. Let's go over that next. 
