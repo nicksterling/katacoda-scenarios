@@ -1,5 +1,5 @@
 {
-    "title": "Kubernetes Pods 101 - 0.1",
+    "title": "Kubernetes Pods 101 - 0.2",
     "description": "This is an introduction to pods in Kubernetes",
     "difficulty": "beginner",
     "time": "10 minutes",
@@ -10,8 +10,8 @@
                 "text": "setup.md"
             },
             {
-              "title": "Pods",
-              "text": "pods.md"
+                "title": "Pods",
+                "text": "pods.md"
             }
         ],
         "intro": {
@@ -24,6 +24,9 @@
         }
     },
     "environment": {
+        "uieditorpath": "/root/example",
+        "showide": true,
+        "idePort": 23000,
         "uilayout": "terminal",
         "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
     },
