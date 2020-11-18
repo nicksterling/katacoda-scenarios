@@ -1,6 +1,6 @@
 
-## Clone the repo
-`cd /root && git clone https://github.com/nicksterling/k8s-katacoda-workshop.git`{{execute}}
+<!-- ## Clone the repo
+`cd /root && git clone https://github.com/nicksterling/k8s-katacoda-workshop.git`{{execute}} -->
 
 ## Install K9s (Optional)
 `curl -JLO https://github.com/derailed/k9s/releases/download/v0.23.10/k9s_Linux_x86_64.tar.gz && tar xvzf k9s_Linux_x86_64.tar.gz && mv k9s /usr/bin`{{execute}}

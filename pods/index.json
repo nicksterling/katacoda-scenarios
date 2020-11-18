@@ -1,14 +1,10 @@
 {
-    "title": "Kubernetes Pods 101 - 0.8",
+    "title": "Kubernetes Pods 101 - 0.9",
     "description": "This is an introduction to pods in Kubernetes",
-    "difficulty": "beginner",
+    "difficulty": "Beginner",
     "time": "10 minutes",
     "details": {
         "steps": [
-            {
-                "title": "Environment Setup",
-                "text": "setup.md"
-            },
             {
                 "title": "Pods",
                 "text": "pods.md"
@@ -27,8 +23,7 @@
         "uieditorpath": "/root/k8s-katacoda-workshop",
         "showide": true,
         "idePort": 23000,
-        "uilayout": "terminal",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+        "uilayout": "terminal"
     },
     "backend": {
         "imageid": "kubernetes-cluster-running:1.18"
