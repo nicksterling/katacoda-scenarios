@@ -33,7 +33,7 @@ EOF
 
 And apply it: 
 ```
-kubectl apply -f deployment.yml
+kubectl apply -f /root/k8s-katacoda-workshop/deployment.yml
 ```{{execute}}
 
 Now let's create a **loadbalancer.yml** service to point to our new Deployment
@@ -61,7 +61,7 @@ EOF
 
 And apply it
 ```
-kubectl apply -f loadbalancer.yml
+kubectl apply -f /root/k8s-katacoda-workshop/loadbalancer.yml
 ```{{execute}}
 
 ## Scale The Pods
@@ -69,7 +69,7 @@ One thing that you can do is scale the number of pods across your cluster for hi
 
 Once you've done that apply the change
 ```
-kubectl apply -f deployment.yml
+kubectl apply -f /root/k8s-katacoda-workshop/deployment.yml
 ```{{execute}}
 
 Now watch the change
