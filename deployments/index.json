@@ -1,6 +1,6 @@
 {
     "title": "Kubernetes 101 Part 3 - Deployments - v0.1",
-    "description": "This is an introduction to services in Kubernetes",
+    "description": "This is an introduction to deployments in Kubernetes",
     "difficulty": "Beginner",
     "time": "10 minutes",
     "details": {
