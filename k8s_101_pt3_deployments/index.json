@@ -8,6 +8,14 @@
             {
                 "title": "Deployments",
                 "text": "deployments.md"
+            },
+            {
+                "title": "Scale the Deployment",
+                "text": "scale.md"
+            },
+            {
+                "title": "Rolling Updates",
+                "text": "updates.md"
             }
         ],
         "intro": {

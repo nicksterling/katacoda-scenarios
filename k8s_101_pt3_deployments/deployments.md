@@ -61,18 +61,3 @@ And apply it
 ```
 kubectl apply -f /root/k8s-katacoda-workshop/hello-k8s.service.yml
 ```{{execute}}
-
-## Scale The Pods
-One thing that you can do is scale the number of pods across your cluster for high availability. In your `**hello-k8s.deployment.yml**` file look for replicas and increase it to **4**
-
-Once you've done that apply the change
-```
-kubectl apply -f /root/k8s-katacoda-workshop/hello-k8s.deployment.yml
-```{{execute}}
-
-Now watch the change
-```
-kubectl get all 
-```{{execute}}
-
-In the next section we'll focus on updating your app to a newer version with a rolling update. 
