@@ -1,0 +1,31 @@
+{
+    "title": "Kubernetes Deployments 101 - v0.1",
+    "description": "This is an introduction to services in Kubernetes",
+    "difficulty": "Beginner",
+    "time": "10 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Deployments",
+                "text": "deployments.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "credits": "",
+            "code": "foreground.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "uieditorpath": "/root/k8s-katacoda-workshop",
+        "showide": true,
+        "idePort": 23000,
+        "uilayout": "terminal"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running:1.18"
+    }
+}

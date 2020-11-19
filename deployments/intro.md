@@ -1,0 +1,1 @@
+Welcome to the first in a series of Kubernetes 101 tutorials. In this scenario we will cover Kubernetes deployments and walk through some examples. 
