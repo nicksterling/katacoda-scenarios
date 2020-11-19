@@ -4,8 +4,11 @@ A service is a way to expose an application running on a pod (or set of pods) as
 
 There are three major types of Services
 1) _ClusterIP_: The default type of Service in K8s. It will give you a service that other apps inside your cluster can access. **There is no external access**
+
 2) _NodePort_: This is most primitive way of getting external traffic to your app. This will open up a port on all the nodes in your cluster and traffic received on this port will forward to the application. 
+
 3) _LoadBalancer_: It leverages your IaaS' native LB to expose a cluster resource to an IP address given by the IaaS' LB. 
+
 4) _Ingress_: Ok... it's technically not a service. It's a _resource_ but I would be remiss if I didn't mention it. This is another way to allow traffic into your cluster. It's the most powerful way but also the most complex. It's implemented through a third party proxy like Nginx or HAProxy and are managed via Ingress Controllers. It's essentially a sophisticated router.  
 
 ## Deploy a Pod
